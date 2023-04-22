@@ -7,12 +7,18 @@ body {
     background-color: #e3e2de;
 }
 
-.aesop-pic {
-    border-radius: 50%;
-    width: 200px;
+.container {
+    display: flex;
+    align-items: center;
+    padding: 50px;
 }
 
-.container {
+.aesop-pic {
+    border-radius: 50%;
+    width: 300px;
+}
+
+.nav-container {
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -31,9 +37,11 @@ body {
 .buttons {
     display: flex;
     flex-direction: column;
-    font-size: 2rem;
+    font-size: 3rem;
+    justify-content: space-around;
     align-items: center;
     gap: 2rem;
+    height: 80%;
 }
 
 .buttons a {
@@ -41,4 +49,14 @@ body {
     color: black;
     display: flex;
     align-tracks: center;
+    gap: 1.5rem;
 }
+
+.footer {
+    font-size: 2rem;
+}
+
+.backwards {
+    transform: scaleX(-1);
+}
+
