@@ -104,9 +104,9 @@ body {
     transform: scale(1.2);
 }
 
-.buttons:hover > a {
+/* .buttons:hover > a {
     transform: scale(0.8);
-}
+} */
 
 .buttons a:hover {
     transform: scale(1.2);
