@@ -1,33 +1,59 @@
+import * as index from './IndexPage.module.css'
+import * as mashal from './MashalPage.module.css'
+import { getRandomMashal } from './functions'
+
 import Dice from './assets/dice.png'
 import Scroll from './assets/scroll.png'
 import Quill from './assets/quill.png'
+import { useEffect, useState } from 'react'
 
-function RandomMashalButton() {
+function RandomMashalButton(props) {
+    let style;
+
+    if (props.style === 'index') style = index;
+    if (props.style === 'mashal') style = mashal;
+
+    let [randomMashalLink, setRandomMashalLink] = useState(getRandomMashal())
+
+    let [link, setLink] = useState(
+        window.location.href.slice(0, window.location.href.indexOf('?'))
+        )
+
     return (
-        <a href="" className="random main">
-            <img src={Dice} width="70px" className='black-white' />
+        <a href={`${link}?${randomMashalLink}`} className="random">
+            <img src={Dice} className={`${style.blackWhite} ${style.dice}`} />
             משל אקראי 
-            <img src={Dice} width="70px" className='black-white' />
+            <img src={Dice} className={`${style.blackWhite} ${style.dice}`} />
         </a>
     )
 }
 
-function CollectionMashalButton() {
+function CollectionMashalButton(props) {
+    let style;
+
+    if (props.style === 'index') style = index;
+    if (props.style === 'mashal') style = mashal;
+    
         return (
-            <a href="" className="collection main">
-            <img src={Scroll} width="60px" className='black-white'/>
+            <a href="" className="collection">
+            <img src={Scroll} className={`${style.blackWhite} ${style.scroll}`}/>
                 אוסף משלים
-            <img src={Scroll} width="60px" className='black-white'/>  
+            <img src={Scroll} className={`${style.blackWhite} ${style.scroll}`}/>  
             </a>
         )
 }
 
-function AboutMashalButton() {
+function AboutMashalButton(props) {
+    let style;
+
+    if (props.style === 'index') style = index;
+    if (props.style === 'mashal') style = mashal;
+
     return (
-        <a href="" className="about main">
-            <img src={Quill} width="80px" className='black-white backwards' style={{marginRight: 2.5 + 'rem'}}/>
+        <a href="" className={"about"} >
+            <img src={Quill} className={`${style.blackWhite} ${style.backwards} ${style.quill}`} style={{marginRight: 2.5 + 'rem'}}/>
                 אודות
-            <img src={Quill} width="80px" className='black-white' style={{marginLeft: 2.5 + 'rem'}} />
+            <img src={Quill} className={`${style.blackWhite} ${style.quill}`} style={{marginLeft: 2.5 + 'rem'}} />
             </a>
     )
 }

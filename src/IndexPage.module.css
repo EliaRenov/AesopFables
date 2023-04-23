@@ -23,7 +23,7 @@ body {
     position: relative;
 }
 
-.aesop-pic {
+.aesopPic {
     border-radius: 50%;
     width: 225px;
     transition: transform 0.2s;
@@ -36,7 +36,7 @@ body {
     transition: transform 0.2s;
 }
 
-.nav-container {
+.navContainer {
     height: 100%;
     width: 100vw;
     display: grid;
@@ -85,7 +85,7 @@ body {
 }
 
 
-.black-white {
+.blackWhite {
     filter: grayscale(100%);
 }
 
@@ -95,14 +95,13 @@ body {
     /* opacity: 1; */
 }
 
-.warrior-2 {
+.warrior2 {
     margin-bottom: -4.5rem;
 }
 
 .warrior:hover, .header:hover, 
-.aesop-pic:hover {
+.aesopPic:hover {
     transform: scale(1.1);
-    
 }
 
 .footer:hover {
@@ -117,13 +116,13 @@ body {
     transform: scale(1.2);
 }
 
-.web-1 {
+.web1 {
     position: fixed;
     top: -9px;
     right: -8px;
 }
 
-.web-2 {
+.web2 {
     position: fixed;
     top: -9px;
     left: -8px;
@@ -138,3 +137,14 @@ body {
     width: 100%;
 }
 
+.dice {
+    width: 70px;
+}
+
+.scroll {
+    width: 60px;
+}
+
+.quill {
+    width: 80px;
+}

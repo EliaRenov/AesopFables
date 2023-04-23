@@ -1,4 +1,4 @@
-import './IndexPage.css'
+// import './IndexPage.css'
 import AesopPic from './assets/aesop.png'
 import Warrior from './assets/warrior.png'
 import Warrior2 from './assets/warrior2.png'

@@ -1,11 +1,12 @@
 import IndexPage from "./IndexPage"
 import AboutPage from "./AboutPage"
-import './IndexPage.css'
+import MashalPage from "./MashalPage"
 
 function App() {
   
   return (
-    <IndexPage />
+    // <IndexPage />
+    <MashalPage />
   )
  
 }
