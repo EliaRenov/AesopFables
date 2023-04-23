@@ -11,15 +11,17 @@ export default function MashalPage(props) {
     return (
         <div className={mashal.container}>
             <div className={mashal.content}>
-                {loadContent(link)}
+                {loadContent()}
             </div>
             <div className={`${mashal.navContainer}`}>
+                <a href='./'>
             <img src={AesopPic} alt="דיוקן של איזופוס" className={`${mashal.aesopPic}`} />
+
+                </a>
                 <h1 className={`${mashal.header}`}>משלי איזופוס</h1>
         <section className={`${mashal.buttons}`}>
                     <RandomMashalButton style="mashal"
                     link={link}
-                    // onClick={getMashalContent}
                     />
                     <CollectionMashalButton style="mashal"/>
                     <AboutMashalButton style="mashal"/>

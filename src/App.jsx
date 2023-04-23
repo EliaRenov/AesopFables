@@ -3,10 +3,12 @@ import AboutPage from "./AboutPage"
 import MashalPage from "./MashalPage"
 
 function App() {
-  
-  return (
-    // <IndexPage />
-    <MashalPage />
+  let Show = window.location.href.includes('mashal?') ? <MashalPage /> : <IndexPage />
+
+
+  return ( 
+    Show
+    
   )
  
 }

@@ -20,7 +20,7 @@ function RandomMashalButton(props) {
         )
 
     return (
-        <a href={`${link}?${randomMashalLink}`} className="random">
+        <a href={`./mashal?${randomMashalLink}`} className="random">
             <img src={Dice} className={`${style.blackWhite} ${style.dice}`} />
             משל אקראי 
             <img src={Dice} className={`${style.blackWhite} ${style.dice}`} />

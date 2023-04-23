@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -154,18 +156,25 @@ body {
 }
 
 .content {
-    font-family: Daniel;
     direction: rtl;
     padding-right: 120px;
     padding-top: 50px;
-    grid-column: 6 / 14 ;
-    /* grid-row: ; */
+    grid-column: 5 / 14;
+    line-height: 3rem;
 }
 
 .mashalTitle {
     font-size: 4rem;
+    margin-bottom: 2rem;
 }
 
 .para {
-    font-size: 2rem;
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+    font-family: 'Noto Serif Hebrew';
 }
+
+.para:last-of-type {
+    margin-top: 2rem;
+}
+

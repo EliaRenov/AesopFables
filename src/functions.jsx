@@ -2,6 +2,12 @@ import { mashals, mashalIndices } from "./mashalsDB";
 import React, { useState } from 'react'
 import * as mashal from './MashalPage.module.css'
 
+export function clear() {
+    while (document.querySelector("root").firstChild) {
+        document.querySelector("root").firstChild.remove()
+    }
+}
+
 export function getRandomMashal() {
     const mashalsKeys = Object.keys(mashals);
     const mashalIndex = Math.floor(mashalsKeys.length * Math.random());
@@ -26,30 +32,29 @@ export function fetchContent() {
     return mashals[mashalTitle]
 }
 
-export function loadContent(name) {
+function clearNikkud(text) {
+    return text.replace(/[ְֱֲֳִֵֶַָֹֻּׁׂ\u0591-\u05c7]/g, "")
+}
+
+export function loadContent() {
     let content = fetchContent()
 
     let heading = content[1][0]
 
-    let paragraphs = content[1].slice(1).map(para => {
-        return <p className={mashal.para} key={para}>{para}</p>
-    })
-
-    // for (let i = 1; i < content[1].length; i++) {
-    //     const paragraph = document.createElement('p')
-    //     paragraph.textContent = content[1][i];
-
-    //     content.append(paragraph)
-    // }
+    let [paragraphs, setParagraphs] = useState(content[1].slice(1).map(para => {
+        return <p className={mashal.para} key={para}>{
+            // clearNikkud(para)
+            para
+            }
+            </p>
+    }))
 
     return (
         <>
             <h1 className={mashal.mashalTitle}>
-                {heading}
+                {clearNikkud(heading)}
             </h1>
             {paragraphs}
-
-
         </>
     )
     
