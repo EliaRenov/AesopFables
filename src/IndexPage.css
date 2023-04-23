@@ -11,7 +11,8 @@
 }
 
 body {
-    background-color: #e3e2de;
+    /* background-color: #edecea; */
+    background-color: #ffffff;
 }
 
 .container {
@@ -25,15 +26,13 @@ body {
 .aesop-pic {
     border-radius: 50%;
     width: 225px;
-    margin-right: -30rem;
-    margin-top: -10rem;
     transition: transform 0.2s;
+    margin-bottom: -3rem;
 }
 
 .header {
-    font-size: 5rem;
-    margin-left: -20rem;
-    margin-bottom: -8.5rem;
+    /* margin-top: -4rem; */
+    font-size: 3rem;
     transition: transform 0.2s;
 }
 
@@ -56,7 +55,7 @@ body {
     font-size: 3rem;
     justify-content: space-around;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
     height: 80%;
 }
 
@@ -66,11 +65,12 @@ body {
     display: flex;
     align-items: center;
     gap: 2.5rem;
-    font-size: 3.5rem;
+    font-size: 5rem;
     letter-spacing: 5px;
     font-weight: 100;
     transition: 0.2s;
     padding: 7px;
+    filter: contrast(140%);
 }
 
 
@@ -91,8 +91,13 @@ body {
 
 .warrior {
     transition: transform 0.2s;
+    opacity: 0.85;
+    /* opacity: 1; */
 }
 
+.warrior-2 {
+    margin-bottom: -4.5rem;
+}
 
 .warrior:hover, .header:hover, 
 .aesop-pic:hover {
@@ -112,5 +117,24 @@ body {
     transform: scale(1.2);
 }
 
+.web-1 {
+    position: fixed;
+    top: -9px;
+    right: -8px;
+}
 
+.web-2 {
+    position: fixed;
+    top: -9px;
+    left: -8px;
+}
+
+.grass {
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    /* background-image: url("./assets/grass.png"); */
+    height: 30px;
+    width: 100%;
+}
 
