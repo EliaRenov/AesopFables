@@ -10,15 +10,14 @@
     src: url('./assets/Daniel.ttf');
 }
 
-body {
-    /* background-color: #edecea; */
-    background-color: #ffffff;
+body, html {
+    height: 100%;
 }
 
 .container {
     display: flex;
     align-items: center;
-    padding: 50px;
+    margin-top: 50px;
     height: 100vh;
     position: relative;
 }
@@ -40,7 +39,7 @@ body {
     height: 100%;
     width: 100vw;
     display: grid;
-    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
 
     flex-direction: column;
     justify-content: center;
@@ -61,11 +60,12 @@ body {
 
 .buttons a {
     text-decoration: none;
+    text-align: center;
     color: black;
     display: flex;
     align-items: center;
     gap: 2.5rem;
-    font-size: 5rem;
+    font-size: min(5rem, 5vw);
     letter-spacing: 5px;
     font-weight: 100;
     transition: 0.2s;
@@ -92,11 +92,17 @@ body {
 .warrior {
     transition: transform 0.2s;
     opacity: 0.85;
-    /* opacity: 1; */
+    /* height: 500px; */
+    height: 25vw;
+    position: fixed;
+}
+
+.warrior1 {
+    left: 1vw;
 }
 
 .warrior2 {
-    margin-bottom: -4.5rem;
+    right: 0;
 }
 
 .warrior:hover, .header:hover, 
@@ -147,4 +153,10 @@ body {
 
 .quill {
     width: 80px;
+}
+
+@media only screen and (max-width: 880px) {
+    .warrior {
+        display: none;
+    }
 }

@@ -35,7 +35,7 @@ function CollectionMashalButton(props) {
     if (props.style === 'mashal') style = mashal;
     
         return (
-            <a href="" className="collection">
+            <a href="./collection" className="collection">
             <img src={Scroll} className={`${style.blackWhite} ${style.scroll}`}/>
                 אוסף משלים
             <img src={Scroll} className={`${style.blackWhite} ${style.scroll}`}/>  
@@ -50,10 +50,10 @@ function AboutMashalButton(props) {
     if (props.style === 'mashal') style = mashal;
 
     return (
-        <a href="" className={"about"} >
-            <img src={Quill} className={`${style.blackWhite} ${style.backwards} ${style.quill}`} style={{marginRight: 2.5 + 'rem'}}/>
+        <a href="./about" className={"about"} >
+            <img src={Quill} className={`${style.blackWhite} ${style.backwards} ${style.quill} ${style.quillLeft}`} />
                 אודות
-            <img src={Quill} className={`${style.blackWhite} ${style.quill}`} style={{marginLeft: 2.5 + 'rem'}} />
+            <img src={Quill} className={`${style.blackWhite} ${style.quill} ${style.quillRight}`} />
             </a>
     )
 }

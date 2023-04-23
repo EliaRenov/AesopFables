@@ -2,16 +2,16 @@ import { RandomMashalButton, CollectionMashalButton , AboutMashalButton } from '
 import AesopPic from './assets/aesop.png'
 import * as mashal from './MashalPage.module.css'
 import { useState } from 'react'
-import { loadContent } from './functions'
+import { loadAllMashals } from './functions'
 
-export default function MashalPage(props) {
+export default function CollectionPage(props) {
 
-    let [link, setLink] = useState(decodeURI(window.location.href))
+    
     
     return (
         <div className={mashal.container}>
             <div className={mashal.content}>
-                {loadContent()}
+                {loadAllMashals()}
             </div>
             <div className={`${mashal.navContainer}`}>
                 <a href='./'>
@@ -23,7 +23,6 @@ export default function MashalPage(props) {
                 </a>
         <section className={`${mashal.buttons}`}>
                     <RandomMashalButton style="mashal"
-                    link={link}
                     />
                     <CollectionMashalButton style="mashal"/>
                     <AboutMashalButton style="mashal"/>

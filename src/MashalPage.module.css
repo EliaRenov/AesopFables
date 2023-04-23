@@ -13,7 +13,6 @@
 }
 
 body {
-    /* background-color: #edecea; */
     background-color: #ffffff;
 }
 
@@ -21,14 +20,8 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    padding: 50px;
+    padding: 2vw;
     height: 100vh;
-
-
-
-    /* align-items: center; */
-    /* align-self: center; */
-    /* justify-content: center; */
 }
 
 .aesopPic {
@@ -42,6 +35,7 @@ body {
     transition: transform 0.2s;
 }
 
+
 .navContainer {
     display: flex;
     grid-row: 1 / -1;
@@ -50,13 +44,15 @@ body {
     justify-content: center;
     justify-items: center;
     align-items: center;
+    position: fixed;
 }
+
 
 
 .buttons {
     display: flex;
     flex-direction: column;
-    font-size: 2rem;
+    font-size: min(2rem, 2vw);
     align-items: center;
     gap: 2rem;
     height: 80%;
@@ -70,7 +66,7 @@ body {
     justify-content: center;
     text-align: center;
 
-    gap: 2.5rem;
+    gap: 2.5vw;
     font-size: 2.5rem;
     letter-spacing: 4px;
     font-weight: 300;
@@ -95,17 +91,7 @@ body {
     filter: grayscale(100%);
 }
 
-.warrior {
-    transition: transform 0.2s;
-    opacity: 0.85;
-    /* opacity: 1; */
-}
-
-.warrior2 {
-    margin-bottom: -4.5rem;
-}
-
-.warrior:hover, .header:hover, 
+.header:hover, 
 .aesopPic:hover {
     transform: scale(1.1);
 }
@@ -122,27 +108,6 @@ body {
     transform: scale(1.2);
 }
 
-.web1 {
-    position: fixed;
-    top: -9px;
-    right: -8px;
-}
-
-.web2 {
-    position: fixed;
-    top: -9px;
-    left: -8px;
-}
-
-.grass {
-    position: fixed;
-    bottom: 0;
-    left: 0px;
-    /* background-image: url("./assets/grass.png"); */
-    height: 30px;
-    width: 100%;
-}
-
 .dice {
     width: 40px;
 }
@@ -152,14 +117,21 @@ body {
 }
 
 .quill {
-    width: 50px;
+    width: 50px;    
+}
+
+.quillLeft {
+    margin-right: 2.5rem;
+}
+
+.quillRight {
+    margin-left: 2.5rem;
 }
 
 .content {
     direction: rtl;
-    padding-right: 120px;
-    padding-top: 50px;
-    grid-column: 5 / 14;
+    padding: 5vh 3vw;
+    grid-column: 5 / -1;
     line-height: 3rem;
 }
 
@@ -169,12 +141,98 @@ body {
 }
 
 .para {
-    font-size: 2.1rem;
+    font-size: min(2.1rem, 2vw);
     letter-spacing: 1px;
     font-family: 'Noto Serif Hebrew';
 }
 
 .para:last-of-type {
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .navContainer {
+        width: 95%;
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        justify-self: center;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 0;
+        
+        padding-bottom: 5px;
+        border-bottom: 1px solid black;
+        position: static;
+    }
+
+    .navContainer .buttons a {
+        font-size: 2rem;
+        letter-spacing: 0;
+    }
+
+    .navContainer a:has(.aesopPic) {
+        grid-row: 1;
+        grid-column: 2 / 3;
+    }
+
+    .aesopPic {
+        width: 150px;
+    }
+
+    .navContainer a:has(.header) {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        align-self: start;
+        justify-self: end;
+        direction: rtl;
+        text-align: center;
+    }
+
+    .navContainer .buttons {
+        grid-row: 1 / 3;
+        justify-content: center;
+    }
+
+    .content {
+        grid-row: 2 / -1;
+        grid-column: 1 / -1;
+    }
+
+    .content .para {
+        font-size: 1.2rem;
+    }
+
+    .dice {
+        width: 30px;
+    }
+    
+    .scroll {
+        width: 25px;
+    }
+    
+    .quill {
+        width: 35px;
+    }
+
+    .quillLeft {
+        margin-right: 0;
+    }
+    
+    .quillRight {
+        margin-left: 0;
+    }
+
+    .mashalTitle {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+}
