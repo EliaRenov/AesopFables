@@ -8,7 +8,7 @@ export default defineConfig({
     hmr: {
         host: 'localhost',
     },
-  base: '/react-mashal/'
+  base: "/react-mashal/"
 }
 })
 
