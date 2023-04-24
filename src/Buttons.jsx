@@ -1,5 +1,6 @@
 import * as index from './IndexPage.module.css'
 import * as mashal from './MashalPage.module.css'
+import * as about from './AboutPage.module.css'
 import { getRandomMashal } from './functions'
 
 import Dice from './assets/dice.png'
@@ -12,6 +13,7 @@ function RandomMashalButton(props) {
 
     if (props.style === 'index') style = index;
     if (props.style === 'mashal') style = mashal;
+    if (props.style === 'about') style = about;
 
     let [randomMashalLink, setRandomMashalLink] = useState(getRandomMashal())
 
@@ -33,6 +35,7 @@ function CollectionMashalButton(props) {
 
     if (props.style === 'index') style = index;
     if (props.style === 'mashal') style = mashal;
+    if (props.style === 'about') style = about;
     
         return (
             <a href="./collection" className="collection">
@@ -48,6 +51,7 @@ function AboutMashalButton(props) {
 
     if (props.style === 'index') style = index;
     if (props.style === 'mashal') style = mashal;
+    if (props.style === 'about') style = about;
 
     return (
         <a href="./about" className={"about"} >

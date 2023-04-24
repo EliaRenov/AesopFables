@@ -10,6 +10,8 @@ function App() {
     Show = <MashalPage />
   } else if (window.location.href.includes('collection')) {
     Show = <CollectionPage />
+  } else if (window.location.href.includes('about')) {
+    Show = <AboutPage />
   } else {
     Show = <IndexPage />
   }

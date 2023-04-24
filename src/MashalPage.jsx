@@ -2,7 +2,7 @@ import { RandomMashalButton, CollectionMashalButton , AboutMashalButton } from '
 import AesopPic from './assets/aesop.png'
 import * as mashal from './MashalPage.module.css'
 import { useState } from 'react'
-import { loadContent } from './functions'
+import { loadContent, RandomImg } from './functions'
 
 export default function MashalPage(props) {
 
@@ -27,6 +27,7 @@ export default function MashalPage(props) {
                     />
                     <CollectionMashalButton style="mashal"/>
                     <AboutMashalButton style="mashal"/>
+                    <RandomImg />
         </section>
             </div>
         </div>

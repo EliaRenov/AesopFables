@@ -12,21 +12,19 @@ export default function IndexPage() {
     return (
         <div className={index.container}>
             <img src={Warrior} className={`${index.warrior} ${index.warrior1}`} />
-            <div className={`${index.navContainer}`}>
-                
-                <h1 className={`${index.header}`}>משלי <img src={AesopPic} alt="דיוקן של איזופוס" className={`${index.aesopPic} ${index.main}`} /> איזופוס</h1>
+            <nav className={`${index.navContainer}`}>
+                <div className={`${index.header}`}>
+                    <h1>משלי</h1>
+                    <img src={AesopPic} alt="דיוקן של איזופוס" className={index.aesopPic} />
+                    <h1>איזופוס</h1>
+                </div>
                 <section className={`${index.buttons}`}>
-                    <RandomMashalButton style="index"/>
                     <CollectionMashalButton style="index"/>
+                    <RandomMashalButton style="index"/>
                     <AboutMashalButton style="index"/>
                 </section>
 
-                <footer className={`${index.footer}`}>
-                    נוצר על ידי אליה רנוב
-                </footer>
-
-
-            </div>
+            </nav>
 
             <img className={`${index.warrior} ${index.warrior2}`} src={Warrior2} />
         </div>

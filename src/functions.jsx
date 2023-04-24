@@ -8,6 +8,19 @@ export function clear() {
     }
 }
 
+export function RandomImg() {
+    const randomNum = Math.floor(Math.random() * 14)
+    const animals = ['bear', 'bunny', 'duck', 'eagle', 'fox', 'frog', 'goat', 'horse', 'lion', 'scorpion', 'sheep', 'snake', 'turtle', 'wolf']
+    return (
+        <img
+        src={`src/assets/animals/${animals[randomNum]}.png`}
+        alt={`${animals[randomNum]} drawing`} className={mashal.animal}
+        />
+        )
+}
+
+
+
 export function getRandomMashal() {
     const mashalsKeys = Object.keys(mashals);
     const mashalIndex = Math.floor(mashalsKeys.length * Math.random());
