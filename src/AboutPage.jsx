@@ -20,12 +20,12 @@ export default function IndexPage() {
                 </a>
                 <section className={`${about.buttons}`}>
                     <CollectionMashalButton style="about"/>
-                    <h1 className={about.aboutTitle}>אודות</h1>
                     <RandomMashalButton style="about"/>
                 </section>
 
             </nav>
             <section className={about.aboutText}>
+                    <h1 className={about.aboutTitle}>אודות</h1>
                 <p>
                 משלי איזופוס הם אוסף של משלים המיוחס לאיזופוס, עבד ומספר סיפורים שחי ביוון העתיקה בין 620 ל-564 לפנה"ס. המשלים ברובם קצרים ובמרכזם בעלי חיים.
                 </p>
