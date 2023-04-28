@@ -7,6 +7,7 @@ import Dice from './assets/dice.png'
 import Scroll from './assets/scroll.png'
 import Quill from './assets/quill.png'
 import { useEffect, useState } from 'react'
+import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom"
 
 function RandomMashalButton(props) {
     let style;
@@ -61,7 +62,6 @@ function AboutMashalButton(props) {
             </NavLink>
     )
 }
-// <NavLink to="/react-mashal/collection" >
 
 
 
