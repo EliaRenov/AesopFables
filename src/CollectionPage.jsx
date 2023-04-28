@@ -3,24 +3,23 @@ import AesopPic from './assets/aesop.png'
 import * as mashal from './MashalPage.module.css'
 import { useState } from 'react'
 import { loadAllMashals } from './functions'
+import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom"
 
 export default function CollectionPage(props) {
 
-    
-    
     return (
         <div className={mashal.container}>
             <div className={mashal.content}>
                 {loadAllMashals()}
             </div>
             <div className={`${mashal.navContainer}`}>
-                <a href='./'>
+                <Link to='/react-mashal/'>
             <img src={AesopPic} alt="דיוקן של איזופוס" className={`${mashal.aesopPic}`} />
 
-                </a>
-                <a href='./'>
+                </Link>
+                <Link to='/react-mashal/'>
                 <h1 className={`${mashal.header}`}>משלי איזופוס</h1>
-                </a>
+                </Link>
         <section className={`${mashal.buttons}`}>
                     <RandomMashalButton style="mashal"
                     />

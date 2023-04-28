@@ -69,7 +69,6 @@ export function loadAllMashals() {
         content.push(loadContent(mashals[mashal]))
      }
 
-     console.log(content)
     return content    
 }
 
@@ -77,19 +76,16 @@ export function loadContent(content = fetchContent()) {
     let heading = content[1][0]
     let paragraphs = content[1].slice(1).map(para => {
         return <p className={mashal.para} key={para}>{
-            // clearNikkud(para)
             para
             }
             </p>
     })
     
-    
-
     return (
         <>
-        <div className="mashal">
-            <a href={`./mashal?${mashalIndices[content[0]]}`}>
-                <h1 className={ mashal.mashalTitle}> 
+        <div className="mashal" key={heading}>
+            <a key={mashalIndices[content[0]]} href={`./mashal?${mashalIndices[content[0]]}`}>
+                <h1 key={mashal.mashalTitle} className={ mashal.mashalTitle}> 
                 {clearNikkud(heading)}
             </h1>
             </a>
