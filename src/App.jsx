@@ -10,14 +10,14 @@ function App() {
   return ( 
     <BrowserRouter basename="/react-mashal">
       <main>
-        <NavLink to="/react-mashal/collection" >Collection test 1</NavLink>
-        <NavLink to="/react-mashal/about" >About test 1</NavLink>
+        <NavLink to="/collection" >Collection test 1</NavLink>
+        <NavLink to="/about" >About test 1</NavLink>
 
         <Routes>
-          <Route path="/react-mashal" element={<IndexPage />} />
-          <Route path="/react-mashal/about" element={<AboutPage />} />
-          <Route path="/react-mashal/mashal" element={<MashalPage />} />
-          <Route path="/react-mashal/collection" element={<CollectionPage />} />
+          <Route path="" element={<IndexPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/mashal" element={<MashalPage />} />
+          <Route path="/collection" element={<CollectionPage />} />
         </Routes>
       </main>
     </BrowserRouter>
