@@ -1,10 +1,11 @@
 import { RandomMashalButton, CollectionMashalButton , AboutMashalButton } from './Buttons'
 import AesopPic from './assets/aesop.png'
 import * as mashal from './MashalPage.module.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { loadContent, RandomImg } from './functions'
 
 export default function MashalPage(props) {
+    
 
     let [link, setLink] = useState(decodeURI(window.location.href))
     

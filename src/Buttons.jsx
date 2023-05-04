@@ -23,10 +23,12 @@ function RandomMashalButton(props) {
         )
 
     return (
-        <NavLink to={`/mashal?${randomMashalLink}`} className="random">
+        <NavLink onClick={() => location = `./mashal?${randomMashalLink}`} to={`/mashal?${randomMashalLink}`} className="random">
+            
             <img src={Dice} className={`${style.blackWhite} ${style.dice}`} />
             משל אקראי 
             <img src={Dice} className={`${style.blackWhite} ${style.dice}`} />
+            
         </NavLink>
     )
 }
