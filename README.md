@@ -22,7 +22,7 @@ https://benyehuda.org/read/11436
 * JavaScript
 * React
 * React Router
-https://i.imgur.com/OAatUQ0.png
+
 
 תמונות מהאתר:
 ![עמוד אודות של האתר](https://i.imgur.com/OAatUQ0.png)
