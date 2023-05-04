@@ -23,7 +23,7 @@ function RandomMashalButton(props) {
         )
 
     return (
-        <NavLink to={`./mashal?${randomMashalLink}`} className="random">
+        <NavLink to={`/mashal?${randomMashalLink}`} className="random">
             <img src={Dice} className={`${style.blackWhite} ${style.dice}`} />
             משל אקראי 
             <img src={Dice} className={`${style.blackWhite} ${style.dice}`} />
@@ -39,7 +39,7 @@ function CollectionMashalButton(props) {
     if (props.style === 'about') style = about;
     
         return (
-            <NavLink to="./collection" className="collection">
+            <NavLink to="/collection" className="collection">
             <img src={Scroll} className={`${style.blackWhite} ${style.scroll}`}/>
                 אוסף משלים
             <img src={Scroll} className={`${style.blackWhite} ${style.scroll}`}/>  
@@ -55,7 +55,7 @@ function AboutMashalButton(props) {
     if (props.style === 'about') style = about;
 
     return (
-        <NavLink to="./about" className={"about"} >
+        <NavLink to="/about" className={"about"} >
             <img src={Quill} className={`${style.blackWhite} ${style.backwards} ${style.quill} ${style.quillLeft}`} />
                 אודות
             <img src={Quill} className={`${style.blackWhite} ${style.quill} ${style.quillRight}`} />
