@@ -12,6 +12,7 @@
 ביצעתי וובסקרייפינג לעמוד "משלי איסופוס" מאתר "פרויקט בן יהודה"
 https://benyehuda.org/read/11436
 
+---
 
 למה האתר נבנה?
 
@@ -22,6 +23,8 @@ https://benyehuda.org/read/11436
 * JavaScript
 * React
 * React Router
+---
+&nbsp;
 
 
 תמונות מהאתר:
