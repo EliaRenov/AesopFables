@@ -8,7 +8,7 @@ import CollectionPage from "./CollectionPage"
 function App() {
 
   return ( 
-    <BrowserRouter>
+    <BrowserRouter basename="/react-mashal">
       <main>
         <NavLink to="/react-mashal/collection" >Collection test 1</NavLink>
         <NavLink to="/react-mashal/about" >About test 1</NavLink>
