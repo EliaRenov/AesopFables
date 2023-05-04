@@ -11,10 +11,10 @@ function App() {
     <BrowserRouter basename="/react-mashal">
       <main>
         <Routes>
-          <Route path="./" element={<IndexPage />} />
-          <Route path="./about" element={<AboutPage />} />
-          <Route path="./mashal" element={<MashalPage />} />g
-          <Route path="./collection" element={<CollectionPage />} />
+          <Route path="/" element={<IndexPage />} />
+          <Route path="//about" element={<AboutPage />} />
+          <Route path="//mashal" element={<MashalPage />} />
+          <Route path="//collection" element={<CollectionPage />} />
         </Routes>
       </main>
     </BrowserRouter>

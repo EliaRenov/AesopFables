@@ -13,11 +13,11 @@ export default function CollectionPage(props) {
                 {loadAllMashals()}
             </div>
             <div className={`${mashal.navContainer}`}>
-                <Link to='/react-mashal/'>
+                <Link to='/'>
             <img src={AesopPic} alt="דיוקן של איזופוס" className={`${mashal.aesopPic}`} />
 
                 </Link>
-                <Link to='/react-mashal/'>
+                <Link to='/'>
                 <h1 className={`${mashal.header}`}>משלי איזופוס</h1>
                 </Link>
         <section className={`${mashal.buttons}`}>
