@@ -9,6 +9,6 @@ export default defineConfig({
         host: 'localhost',
     },
   },
-  base: "/react-mashal/"
+  base: "/AesopFables/"
 })
 

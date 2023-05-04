@@ -8,7 +8,7 @@ import CollectionPage from "./CollectionPage"
 function App() {
 
   return ( 
-    <BrowserRouter basename="/react-mashal/">
+    <BrowserRouter basename="/AesopFables/">
       <main>
         <Routes>
           <Route path="/" element={<IndexPage />} />
