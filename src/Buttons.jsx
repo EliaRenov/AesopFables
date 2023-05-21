@@ -25,9 +25,9 @@ function RandomMashalButton(props) {
     return (
         <NavLink onClick={() => location = `./mashal?${randomMashalLink}`} to={`/mashal?${randomMashalLink}`} className="random">
             
-            <img src={Dice} className={`${style.blackWhite} ${style.dice}`} />
+            <img src={Dice} className={`${style.blackWhite} ${style.dice}`} alt="dice icon" />
             משל אקראי 
-            <img src={Dice} className={`${style.blackWhite} ${style.dice}`} />
+            <img src={Dice} className={`${style.blackWhite} ${style.dice}`} alt="dice icon" />
             
         </NavLink>
     )
@@ -42,9 +42,9 @@ function CollectionMashalButton(props) {
     
         return (
             <NavLink to="/collection" className="collection">
-            <img src={Scroll} className={`${style.blackWhite} ${style.scroll}`}/>
+            <img src={Scroll} className={`${style.blackWhite} ${style.scroll}`} alt="scroll icon"/>
                 אוסף משלים
-            <img src={Scroll} className={`${style.blackWhite} ${style.scroll}`}/>  
+            <img src={Scroll} className={`${style.blackWhite} ${style.scroll}`} alt="scroll icon"/>  
             </NavLink>
         )
 }
@@ -58,9 +58,9 @@ function AboutMashalButton(props) {
 
     return (
         <NavLink to="/about" className={"about"} >
-            <img src={Quill} className={`${style.blackWhite} ${style.backwards} ${style.quill} ${style.quillLeft}`} />
+            <img src={Quill} className={`${style.blackWhite} ${style.backwards} ${style.quill} ${style.quillLeft}`} alt="quill icon" />
                 אודות
-            <img src={Quill} className={`${style.blackWhite} ${style.quill} ${style.quillRight}`} />
+            <img src={Quill} className={`${style.blackWhite} ${style.quill} ${style.quillRight}`} alt="quill icon" />
             </NavLink>
     )
 }
